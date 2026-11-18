@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registration | TutorLink</title>
+    <link rel="stylesheet" href="TeacherRegistration.css">
+</head>
+
+<body class="auth-page">
+    <header class="auth-header"><a class="brand" href="../index.html"><span class="brand-mark">T</span><span>Tutor<span
+                    class="accent">Link</span></span></a><a class="back-link" href="../commonui/login.html">← All
+            portals</a></header>
+    <main class="auth-layout register-layout">
+        <section class="auth-aside"><a class="back-link aside-back" href="../commonui/login.html">← Choose another
+                role</a>
+            <p class="eyebrow">TEACHER PORTAL</p>
+            <h1>Start your TutorLink journey.</h1>
+            <p>Create a teacher profile with details relevant to your role.</p>
+            <div class="feature-list">
+                <div class="feature-item"><span>✓</span>Maintain teaching profile</div>
+                <div class="feature-item"><span>✓</span>Share subject expertise</div>
+                <div class="feature-item"><span>✓</span>Organize tutoring activity</div>
+            </div>
+            <div class="watermark">T</div>
+        </section>
+        <section class="auth-panel">
+            <div class="form-card register-card">
+                <div class="role-pill">● &nbsp; Teacher registration</div>
+                <h2>Create your account</h2>
+                <p class="form-intro">Complete the required fields below.</p>
+                <form class="demo-form">
+                    <div class="form-group"><label for="fullName">Full name</label><input id="fullName" name="fullName"
+                            type="text" placeholder="Your full name"></div>
+                    <div class="form-group"><label for="email">Email address</label><input id="email" name="email"
+                            type="email" placeholder="name@example.com"></div>
+                    <div class="form-group"><label for="phone">Phone number</label><input id="phone" name="phone"
+                            type="tel" placeholder="01XXXXXXXXX"></div>
+                    <div class="form-group"><label for="subject">Subject specialization</label><input id="subject"
+                            name="subject" type="text" placeholder="e.g. Mathematics"></div>
+                    <div class="form-group"><label for="qualification">Education / qualification</label><input
+                            id="qualification" name="qualification" type="text" placeholder="Your qualification"
+                            autocomplete="on"></div>
+                    <div class="form-group"><label for="experience">Teaching experience (years)</label><input
+                            id="experience" name="experience" type="number" placeholder="e.g. 2" min="0"></div>
+                    <div class="form-group"><label for="teachingMode">Preferred teaching mode</label><select
+                            id="teachingMode" name="teachingMode" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="online">Online</option>
+                            <option value="in_person">In person</option>
+                            <option value="both">Both / flexible</option>
+                        </select></div>
+                    <div class="form-group"><label for="availability">Availability</label><input id="availability"
+                            name="availability" type="text" placeholder="e.g. Weekday evenings"></div>
+                    <div class="form-group"><label for="teachingMode">Preferred teaching mode</label><select
+                            id="teachingMode" name="teachingMode">
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                            <option value="online">Online</option>
+                            <option value="in_person">In person</option>
+                            <option value="both">Both / flexible</option>
+                        </select></div>
+                    <div class="form-group"><label for="availability">Availability</label><input id="availability"
+                            name="availability" type="text" placeholder="e.g. Weekday evenings"></div>
+                    <div class="form-group"><label for="password">Password</label><input id="password" name="password"
+                            type="password" placeholder="Create a password"></div>
+                    <div class="form-group"><label for="confirmPassword">Confirm password</label><input
+                            id="confirmPassword" name="confirmPassword" type="password" placeholder="Repeat password"></div><label class="terms-check"><input type="checkbox"
+                            name="terms"> I confirm that the information provided is correct.</label><button
+                        class="submit-button" type="submit">Create account <span>→</span></button>
+                    <p class="form-message" aria-live="polite"></p>
+                </form>
+                <p class="switch-form">Already registered? <a href="login.html">Sign in</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="auth-footer"><span>© 2026 TutorLink</span><a href="../index.html">Home</a></footer>
+    <script src="TeacherRegistration.js"></script>
+</body>
+
+</html>

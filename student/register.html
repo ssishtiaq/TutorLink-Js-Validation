@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | TutorLink</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <script src="js/register-validation.js" defer></script>
+</head>
+
+<body class="auth-page">
+    <header class="auth-header"><a class="brand" href="../index.html"><span class="brand-mark">T</span><span>Tutor<span
+                    class="accent">Link</span></span></a><a class="back-link" href="../commonui/login.html">← All
+            portals</a></header>
+    <main class="auth-layout register-layout">
+        <section class="auth-aside"><a class="back-link aside-back" href="../commonui/login.html">← Choose another
+                role</a>
+            <p class="eyebrow">STUDENT PORTAL</p>
+            <h1>Start your TutorLink journey.</h1>
+            <p>Create a student profile with details relevant to your role.</p>
+            <div class="feature-list">
+                <div class="feature-item"><span>✓</span>Explore tutoring support</div>
+                <div class="feature-item"><span>✓</span>Describe learning goals</div>
+                <div class="feature-item"><span>✓</span>Organize tutoring requests</div>
+            </div>
+            <div class="watermark">T</div>
+        </section>
+        <section class="auth-panel">
+            <div class="form-card register-card">
+                <div class="role-pill">● &nbsp; Student registration</div>
+                <h2>Create your account</h2>
+                <p class="form-intro">Complete the required fields below.</p>
+                <form id="studentRegistrationForm" class="demo-form" novalidate>
+                    <div class="form-group"><label for="reg-fullname">Full name</label><input id="reg-fullname" name="fullName"
+                            type="text" placeholder="Your full name"><small class="error" id="regNameError"></small></div>
+                    <div class="form-group"><label for="reg-email">Email address</label><input id="reg-email" name="email"
+                            type="text" placeholder="name@example.com"><small class="error" id="regEmailError"></small></div>
+                    <div class="form-group"><label for="reg-phone">Phone number</label><input id="reg-phone" name="phone"
+                            type="text" placeholder="017XXXXXXXX"><small class="error" id="regPhoneError"></small></div>
+                    <div class="form-group"><label for="reg-institution">School / college / university</label><input
+                            id="reg-institution" name="institution" type="text" placeholder="Institution name"
+                            autocomplete="on"><small class="error" id="regInstitutionError"></small></div>
+                    <div class="form-group"><label for="reg-academic-level">Class / academic level</label><input
+                            id="reg-academic-level" name="academicLevel" type="text"
+                            placeholder="e.g. Class 10 / Undergraduate"><small class="error" id="regLevelError"></small></div>
+                    <div class="form-group"><label for="reg-subjects">Subjects needed</label><input id="reg-subjects"
+                            name="subjects" type="text" placeholder="e.g. Physics, Mathematics"><small class="error" id="regSubjectsError"></small></div>
+                    <div class="form-group"><label for="reg-date-of-birth">Date of birth</label><input id="reg-date-of-birth"
+                            name="dateOfBirth" type="date"><small class="error" id="regDobError"></small></div>
+                    <div class="form-group"><label for="learningMode">Preferred learning mode</label><select
+                            id="learningMode" name="learningMode" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="online">Online</option>
+                            <option value="in_person">In person</option>
+                            <option value="both">Both / flexible</option>
+                        </select><small class="error" id="regModeError"></small></div>
+                    <div class="form-group"><label for="reg-password">Password</label><input id="reg-password" name="password"
+                            type="password" placeholder="At least 6 characters and one number" autocomplete="new-password"><small class="error" id="regPasswordError"></small></div>
+                    <div class="form-group"><label for="reg-confirm-password">Confirm password</label><input
+                            id="reg-confirm-password" name="confirmPassword" type="password" placeholder="Repeat password"><small class="error" id="regConfirmError"></small></div>
+                    <label class="terms-check"><input id="reg-terms" type="checkbox" name="terms"> I confirm that the information provided is correct.</label>
+                    <small class="error" id="regTermsError"></small><div id="registrationMessage" class="message" aria-live="polite"></div><button
+                        class="submit-button" type="submit">Create account <span>→</span></button>
+                </form>
+                <p class="switch-form">Already registered? <a href="login.html">Sign in</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="auth-footer"><span>© 2026 TutorLink</span><a href="../index.html">Home</a></footer>
+</body>
+
+</html>

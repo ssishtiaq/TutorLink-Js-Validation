@@ -1,0 +1,29 @@
+/* Simple CSS for this role's pages */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fa; color: #222; line-height: 1.6; }
+a { color: #2457a7; }
+.brand { font-size: 23px; font-weight: bold; text-decoration: none; color: #183b70; }
+.brand-mark { display: inline-block; background: #2457a7; color: white; padding: 2px 10px; margin-right: 8px; }
+.accent { color: #2457a7; }
+.auth-header { background: #fff; border-bottom: 1px solid #ddd; padding: 16px 5%; display: flex; justify-content: space-between; align-items: center; }
+.back-link { text-decoration: none; }
+.auth-layout { max-width: 900px; margin: 35px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: start; }
+.auth-aside { background: #e8eef7; padding: 24px; }
+.auth-aside h1 { font-size: 28px; line-height: 1.25; }
+.eyebrow, .role-pill { color: #2457a7; font-weight: bold; }
+.feature-list { line-height: 2.2; }
+.watermark { font-size: 40px; color: #9aacc7; }
+.auth-panel { background: #fff; border: 1px solid #ddd; padding: 24px; }
+.form-card h2 { margin: 8px 0; }
+.form-intro { color: #555; }
+.form-group { margin: 15px 0; }
+.form-group label { display: block; margin-bottom: 5px; }
+input:not([type=checkbox]), select, textarea { width: 100%; padding: 10px; border: 1px solid #bbb; border-radius: 2px; font: inherit; background: #fff; }
+input[type=checkbox] { width: auto; }
+.form-options { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin: 12px 0; }
+.submit-button { width: 100%; font: inherit; }
+.switch-form { margin-top: 18px; }
+.auth-footer { padding: 16px 5%; background: #fff; border-top: 1px solid #ddd; display: flex; justify-content: space-between; }
+.dashboard, .dashboard-main, .page-content { max-width: 1000px; margin: 30px auto; padding: 20px; }
+.dashboard-card, .stat-card, .content-card { background: #fff; border: 1px solid #ddd; padding: 18px; margin-bottom: 15px; }
+button { cursor: pointer; }

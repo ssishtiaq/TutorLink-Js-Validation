@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorLink | Manager Profile</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/manager-validation.js" defer></script>
+</head>
+<body>
+  <header class="auth-header">
+    <a class="brand" href="manager-dashboard.html"><span class="brand-mark">T</span>TutorLink</a>
+    <nav aria-label="Manager navigation">
+      <a href="manager-dashboard.html">Dashboard</a>
+      <a href="manager-profile.html" aria-current="page">My Profile</a>
+      <a href="manager-login.html">Log Out</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="content-card profile-card">
+      <p class="eyebrow">ACCOUNT SETTINGS</p>
+      <h1>My Manager Profile</h1>
+      <p class="form-intro">Review and update your manager information.</p>
+
+      <form id="managerProfileForm" novalidate>
+        <div class="form-group">
+          <label for="profile-fullname">Full name</label>
+          <input type="text" id="profile-fullname" name="fullname" value="Manager Name">
+          <small class="error" id="profileNameError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="profile-email">Email address</label>
+          <input type="text" id="profile-email" name="email" value="manager@example.com">
+          <small class="error" id="profileEmailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="profile-phone">Phone number</label>
+          <input type="text" id="profile-phone" name="phone" placeholder="017XXXXXXXX">
+          <small class="error" id="profilePhoneError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="profile-employee-id">Employee ID</label>
+          <input type="text" id="profile-employee-id" name="employee_id" value="TL-M001" readonly>
+          <small class="help-text">Employee ID cannot be changed here.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="profile-role">Management role</label>
+          <select id="profile-role" name="role">
+            <option value="">Select role</option>
+            <option value="administrator">Administrator</option>
+            <option value="operations" selected>Operations Manager</option>
+            <option value="support">Support Manager</option>
+          </select>
+          <small class="error" id="profileRoleError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="profile-department">Department</label>
+          <select id="profile-department" name="department">
+            <option value="">Select department</option>
+            <option value="student-management">Student Management</option>
+            <option value="tutor-management" selected>Tutor Management</option>
+            <option value="booking-management">Booking Management</option>
+            <option value="payment-management">Payment Management</option>
+            <option value="support">Customer Support</option>
+          </select>
+          <small class="error" id="profileDepartmentError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="profile-address">Office address</label>
+          <textarea id="profile-address" name="address" rows="3">TutorLink Office</textarea>
+        </div>
+
+        <div id="profileMessage" class="message" aria-live="polite"></div>
+        <button class="submit-button" type="submit">Save Changes</button>
+        <button class="secondary-button" type="reset">Reset</button>
+      </form>
+      <p class="form-note">Static prototype only. Profile changes are not stored in a database.</p>
+    </section>
+  </main>
+
+  <footer class="auth-footer">
+    <span>© 2026 TutorLink</span>
+    <span>Manager Portal</span>
+  </footer>
+</body>
+</html>
